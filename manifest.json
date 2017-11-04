@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "cricadon",
+    "version": "1.0",
+    "description": "Shows live cricket score",
+    "icons": {
+        "64": "icons/cricket.png"
+    },
+    "permissions": ["<all_urls>"],
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "64": "icons/cricket.png"
+        },
+        "default_title": "Cricket Scores",
+        "default_popup": "popup.html",
+        "theme_icons": [
+            {
+                "light": "icons/cricket.png",
+                "dark": "icons/cricket.png",
+                "size": 64
+            }
+        ]
+    }
+}

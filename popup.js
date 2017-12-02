@@ -22,9 +22,9 @@ xhr.addEventListener("readystatechange", function () {
                     var json = JSON.parse(this.responseText);
                     var score = document.createElement("h4");
                     var time = document.createElement("h6");
-                    score.innerHTML = json.score;
+                    score.appendChild(document.createTextNode(json.score));
                     var dateTime = new Date(json.provider.pubDate);
-                    time.innerHTML = dateTime.toISOString();
+                    time.appendChild(document.createTextNode(dateTime.toISOString()));
 
                     var div = document.createElement("div");
                     div.className = "container";
